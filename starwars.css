@@ -4,7 +4,8 @@ body {
 }
 
 #scene {
-  height: 500px;
+  height: 400px;
+  -webkit-perspective-origin: center top;
   -webkit-perspective: 300px;
 }
 
@@ -12,16 +13,16 @@ body {
   color: yellow;
   font-size: 40px;
   font-weight: bold;
-  text-align: center;
   white-space: pre-line;
+  text-align: center;
 
   margin-left: 30%;
   margin-right: 30%;
-  height: 400px;
+  height: 300px;
   overflow: hidden;
   position: relative;
-  -webkit-transform-style: preserve-3d;
-  -webkit-perspective-origin: center top;
+  
+  -webkit-transform: rotateX(45deg);
 
 /*
   -webkit-transform-origin: right center;
@@ -34,12 +35,13 @@ body {
 }
 
 #content {
-  font-size: 40px;
+  margin-top: 300px;
+  font-size: 30px;
   font-weight: bold;
   text-align: center;
   white-space: pre-line;
+  width: 100%;
  
   position: absolute;
   overflow: hidden;
 }
-
