@@ -11,6 +11,8 @@ body {
   margin-left: 30%;
   margin-right: 30%;
   height: 400px;
+  max-height: 400px;
+  overflow: hidden;
 
   color: yellow;
   font-size: 40px;
