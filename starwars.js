@@ -25,11 +25,11 @@ $(document).ready(function() {
     return result;
   })();
   
-  var audio = $("#song").get(0);
+  var audio = document.getElementById("song");
+  audio.addEventListener("playing", function() {
+    StarWars.startAnimation();
+  });
   audio.play();
-  StarWars.startAnimation();
-  
-  
   
 });
 
