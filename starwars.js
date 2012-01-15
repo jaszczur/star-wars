@@ -27,12 +27,12 @@ StarWars.setupAudio = function() {
 }
 
 StarWars.startAnimation = function() {
-  var shift_distance = 2 * StarWars.trueHeight - $("#textContainer").height(); // how far to move
-  var time_normalized = parseInt(shift_distance / 100, 10) * 2000; // speed
+  var shiftDistance = 2 * StarWars.trueHeight - $("#textContainer").height(); // how far to move
+  var normalizedTime = parseInt(shiftDistance / 100, 10) * 2000; // speed
   $("#textContainer").contents().wrapAll('<div id="content">').parent() // wrap in div
     .animate({
-      top: -shift_distance
-    }, time_normalized, 'linear'); // and move the div within its "viewport"
+      top: -shiftDistance
+    }, normalizedTime, 'linear'); // and move the div within its "viewport"
 }
 
 

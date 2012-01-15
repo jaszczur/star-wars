@@ -1,6 +1,7 @@
 body {
   background-color: black;
   color: white;
+  font-family: sans-serif;
 }
 
 #scene {
@@ -23,15 +24,6 @@ body {
   position: relative;
   
   -webkit-transform: rotateX(45deg);
-
-/*
-  -webkit-transform-origin: right center;
-  -webkit-transform: perspective(600) rotateX(45deg);
-
-  -moz-perspective: 600;
-  -moz-perspective-origin: center top;
-  -moz-transform: rotateX(45deg);
-*/
 }
 
 #content {
@@ -44,4 +36,9 @@ body {
  
   position: absolute;
   overflow: hidden;
+}
+
+#theend, #theend a {
+  font-size: 20px;
+  color: yellow;
 }
