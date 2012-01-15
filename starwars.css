@@ -1,0 +1,21 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+#scene {
+  height: 500px;
+}
+
+#text {
+  margin-left: 30%;
+  margin-right: 30%;
+  height: 400px;
+
+  color: yellow;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  white-space: pre-line;
+}
+
