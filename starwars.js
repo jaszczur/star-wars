@@ -12,8 +12,8 @@ $(document).ready(function() {
     return result;
   })();
 
-    var shift_distance = true_height - $("#textContainer").height(); // how far to move
-    var time_normalized = parseInt(shift_distance / 100, 10) * 5000; // speed
+    var shift_distance = 2 * true_height - $("#textContainer").height(); // how far to move
+    var time_normalized = parseInt(shift_distance / 100, 10) * 1000; // speed
     $("#textContainer").contents().wrap('<div id="content">').parent() // wrap in div
       .animate({
         top: -shift_distance
