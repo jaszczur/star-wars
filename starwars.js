@@ -1,6 +1,5 @@
 
 $(document).ready(function() {
-  console.log("di");
   var true_height = ( function(){
     var $tempobj = $('#textContainer') // starting with truncated text div container
       .clone().contents() // duplicate the text

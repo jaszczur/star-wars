@@ -5,6 +5,7 @@ body {
 
 #scene {
   height: 500px;
+  -webkit-perspective: 300px;
 }
 
 #textContainer {
@@ -19,6 +20,17 @@ body {
   height: 400px;
   overflow: hidden;
   position: relative;
+  -webkit-transform-style: preserve-3d;
+  -webkit-perspective-origin: center top;
+
+/*
+  -webkit-transform-origin: right center;
+  -webkit-transform: perspective(600) rotateX(45deg);
+
+  -moz-perspective: 600;
+  -moz-perspective-origin: center top;
+  -moz-transform: rotateX(45deg);
+*/
 }
 
 #content {
