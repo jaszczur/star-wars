@@ -5,7 +5,7 @@ StarWars.trueHeight = 0;
 StarWars.initialize = function() {
   StarWars.trueHeight = StarWars.measureTrueHeight();
   StarWars.setupAudio();
-}
+};
 
 StarWars.measureTrueHeight = function() {
   var tempObj = $('#textContainer') // starting with truncated text div container
@@ -16,7 +16,7 @@ StarWars.measureTrueHeight = function() {
   var result = tempObj.height(); // measure it
   tempObj.remove(); // clean up
   return result;
-}
+};
 
 StarWars.setupAudio = function() {
   var audio = document.getElementById("song");
@@ -24,7 +24,16 @@ StarWars.setupAudio = function() {
     StarWars.startAnimation();
   });
   audio.play();
-}
+
+  // Alternative jQuery version (uglier, don't U think?)
+  /*
+  var audio = $("#song");
+  audio.bind('playing', function(evt) {
+    StarWars.startAnimation();
+  });
+  audio.get(0).play();
+  */
+};
 
 StarWars.startAnimation = function() {
   var shiftDistance = 2 * StarWars.trueHeight - $("#textContainer").height(); // how far to move
@@ -33,11 +42,10 @@ StarWars.startAnimation = function() {
     .animate({
       top: -shiftDistance
     }, normalizedTime, 'linear'); // and move the div within its "viewport"
-}
+};
 
 
 $(document).ready(function() {
   StarWars.initialize();
 });
-
 
