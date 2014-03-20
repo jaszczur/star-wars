@@ -8,6 +8,8 @@ body {
   height: 400px;
   -webkit-perspective-origin: center top;
   -webkit-perspective: 300px;
+  -moz-perspective-origin: center top;
+  -moz-perspective: 300px;
 }
 
 #textContainer {
@@ -24,6 +26,7 @@ body {
   position: relative;
   
   -webkit-transform: rotateX(45deg);
+  -moz-transform: rotateX(45deg);
 }
 
 #content {
